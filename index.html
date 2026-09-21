@@ -1,0 +1,124 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para mi bro 🌻</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        background: linear-gradient(180deg, #fff8b0, #ffd84d);
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mensaje {
+        text-align: center;
+        background: rgba(255,255,255,0.85);
+        padding: 35px;
+        border-radius: 25px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        z-index: 10;
+    }
+
+    h1 {
+        color: #d99a00;
+        font-size: 45px;
+        margin: 10px;
+    }
+
+    .ramo {
+        font-size: 75px;
+        margin: 10px;
+        animation: crecer 2s infinite alternate;
+    }
+
+    .flor {
+        position: absolute;
+        font-size: 45px;
+        animation: caer linear infinite;
+    }
+
+    @keyframes crecer {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(1.15);
+        }
+    }
+
+    @keyframes caer {
+        0% {
+            transform: translateY(-100px) rotate(0deg);
+        }
+
+        100% {
+            transform: translateY(110vh) rotate(360deg);
+        }
+    }
+
+    .flor:nth-child(1) {
+        left: 10%;
+        animation-duration: 7s;
+    }
+
+    .flor:nth-child(2) {
+        left: 25%;
+        animation-duration: 9s;
+    }
+
+    .flor:nth-child(3) {
+        left: 45%;
+        animation-duration: 6s;
+    }
+
+    .flor:nth-child(4) {
+        left: 65%;
+        animation-duration: 8s;
+    }
+
+    .flor:nth-child(5) {
+        left: 85%;
+        animation-duration: 10s;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="flor">🌻</div>
+<div class="flor">🌻</div>
+<div class="flor">🌻</div>
+<div class="flor">🌻</div>
+<div class="flor">🌻</div>
+
+<div class="mensaje">
+
+    <div class="ramo">
+        🌻🌻🌻
+    </div>
+
+    <h1>Para mi bro 💛</h1>
+
+    <div class="ramo">
+        🌻🌻🌻
+    </div>
+
+</div>
+
+</body>
+</html>
+```
